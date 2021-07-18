@@ -16,6 +16,6 @@
 #include "vector.h"
 #include "scene.h"
 
-t_vec3f	castray(t_vec3f camera_position, t_vec3f direction, t_scene *scene);
+t_vec3f castray(t_vec3f camera_position, t_vec3f direction, t_scene *scene);
 
 #	endif

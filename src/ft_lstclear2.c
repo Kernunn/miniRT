@@ -13,17 +13,15 @@
 #include "scene.h"
 #include <stdlib.h>
 
-void	ft_lstclear2(t_objects_lst **lst, void (*del)(void *))
-{
-	t_objects_lst	*tmp;
+void ft_lstclear2(t_objects_lst **lst, void (*del)(void *)) {
+  t_objects_lst *tmp;
 
-	if (lst && del)
-		while (*lst)
-		{
-			tmp = (*lst)->next;
-			del((*lst)->object->object);
-			free((*lst)->object);
-			free(*lst);
-			*lst = tmp;
-		}
+  if (lst && del)
+	while (*lst) {
+	  tmp = (*lst)->next;
+	  del((*lst)->object->object);
+	  free((*lst)->object);
+	  free(*lst);
+	  *lst = tmp;
+	}
 }

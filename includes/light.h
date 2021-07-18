@@ -15,17 +15,15 @@
 
 #include "vector.h"
 
-typedef struct	s_ambient_light
-{
-	float	intensity;
-	t_vec3f	color;
-}				t_ambient_light;
+typedef struct s_ambient_light {
+  float intensity;
+  t_vec3f color;
+} t_ambient_light;
 
-typedef struct	s_light
-{
-	t_vec3f	position;
-	float	intensity;
-	t_vec3f	color;
-}				t_light;
+typedef struct s_light {
+  t_vec3f position;
+  float intensity;
+  t_vec3f color;
+} t_light;
 
 #	endif

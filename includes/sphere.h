@@ -16,14 +16,13 @@
 #include "vector.h"
 #include "scene.h"
 
-typedef struct	s_sphere
-{
-	t_vec3f	center;
-	float	radius;
-	t_vec3f	color;
-}				t_sphere;
+typedef struct s_sphere {
+  t_vec3f center;
+  float radius;
+  t_vec3f color;
+} t_sphere;
 
-float			intersect_ray_sphere(t_vec3f origin, t_vec3f direction,
-		t_sphere *sphere);
+float intersect_ray_sphere(t_vec3f origin, t_vec3f direction,
+						   t_sphere *sphere);
 
 #	endif

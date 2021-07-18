@@ -13,7 +13,7 @@
 #	ifndef MATH_FUNCTION_H
 #	define MATH_FUNCTION_H
 
-float	max(float a, float b);
-float	min(float a, float b);
+float max(float a, float b);
+float min(float a, float b);
 
 #	endif

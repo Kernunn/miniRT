@@ -13,10 +13,10 @@
 #	ifndef ADDITIONAL_FUNCTIONS_FOR_PARSING_H
 #	define ADDITIONAL_FUNCTIONS_FOR_PARSING_H
 
-int		count_of_word_in_the_line(char *line, int k);
-int		count_of_word_in_the_mas(char **tab, int k);
-int		check_vector(char **tab, int min, int max);
-void	ft_free_mas(char **tab);
-int		free_and_return(char **tab, char **tmp);
+int count_of_word_in_the_line(char *line, int k);
+int count_of_word_in_the_mas(char **tab, int k);
+int check_vector(char **tab, int min, int max);
+void ft_free_mas(char **tab);
+int free_and_return(char **tab, char **tmp);
 
 #	endif

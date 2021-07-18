@@ -15,9 +15,9 @@
 
 #include "scene.h"
 
-void	add_size(t_scene *scene, char *param);
-void	add_ambient(t_scene *scene, char *param);
-void	add_camera(t_scene *scene, char *param);
-void	add_light(t_scene *scene, char *param);
+void add_size(t_scene *scene, char *param);
+void add_ambient(t_scene *scene, char *param);
+void add_camera(t_scene *scene, char *param);
+void add_light(t_scene *scene, char *param);
 
 #	endif

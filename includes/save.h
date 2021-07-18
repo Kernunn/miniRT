@@ -15,6 +15,6 @@
 
 #include "scene.h"
 
-void	save(t_scene *scene);
+void save(t_scene *scene);
 
 #	endif

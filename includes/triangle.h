@@ -15,24 +15,23 @@
 
 #include "vector.h"
 
-typedef struct	s_triangle
-{
-	t_vec3f	a;
-	t_vec3f	b;
-	t_vec3f	c;
-	t_vec3f	u;
-	t_vec3f	v;
-	t_vec3f	normal;
-	t_vec3f	color;
-	float	calcul_a;
-	float	dot_uu;
-	float	dot_uv;
-	float	dot_vv;
-	float	calcul_d;
-}				t_triangle;
+typedef struct s_triangle {
+  t_vec3f a;
+  t_vec3f b;
+  t_vec3f c;
+  t_vec3f u;
+  t_vec3f v;
+  t_vec3f normal;
+  t_vec3f color;
+  float calcul_a;
+  float dot_uu;
+  float dot_uv;
+  float dot_vv;
+  float calcul_d;
+} t_triangle;
 
-float			intersect_ray_triangle(t_vec3f origin, t_vec3f direction,
-		t_triangle *triangle);
-void			triangle_calculation(t_triangle *square);
+float intersect_ray_triangle(t_vec3f origin, t_vec3f direction,
+							 t_triangle *triangle);
+void triangle_calculation(t_triangle *square);
 
 #	endif

@@ -14,12 +14,11 @@
 #include "render.h"
 #include "bmp.h"
 
-void	save(t_scene *scene)
-{
-	t_vec3f *framebuffer;
+void save(t_scene *scene) {
+  t_vec3f *framebuffer;
 
-	scene->current_camera = scene->cameras->content;
-	framebuffer = render(scene);
-	write_to_bmp(framebuffer, scene->width, scene->height);
-	free(framebuffer);
+  scene->current_camera = scene->cameras->content;
+  framebuffer = render(scene);
+  write_to_bmp(framebuffer, scene->width, scene->height);
+  free(framebuffer);
 }

@@ -15,11 +15,11 @@
 
 #include "scene.h"
 
-void	add_sphere(t_scene *scene, char *param);
-void	add_plane(t_scene *scene, char *param);
-void	add_square(t_scene *scene, char *param);
-void	add_cylinder(t_scene *scene, char *param);
-void	add_triangle(t_scene *scene, char *param);
-void	ft_add_object(t_scene *scene, void *object, t_type_object type);
+void add_sphere(t_scene *scene, char *param);
+void add_plane(t_scene *scene, char *param);
+void add_square(t_scene *scene, char *param);
+void add_cylinder(t_scene *scene, char *param);
+void add_triangle(t_scene *scene, char *param);
+void ft_add_object(t_scene *scene, void *object, t_type_object type);
 
 #	endif

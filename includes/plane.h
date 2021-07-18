@@ -15,14 +15,13 @@
 
 #include "vector.h"
 
-typedef struct	s_plane
-{
-	t_vec3f	center;
-	t_vec3f	normal;
-	t_vec3f	color;
-}				t_plane;
+typedef struct s_plane {
+  t_vec3f center;
+  t_vec3f normal;
+  t_vec3f color;
+} t_plane;
 
-float			intersect_ray_plane(t_vec3f origin,
-		t_vec3f direction, t_plane *plane);
+float intersect_ray_plane(t_vec3f origin,
+						  t_vec3f direction, t_plane *plane);
 
 #	endif

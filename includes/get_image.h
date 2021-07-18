@@ -15,6 +15,6 @@
 
 #include "display.h"
 
-void	get_image(t_vars *vars, int option);
+void get_image(t_vars *vars, int option);
 
 #	endif

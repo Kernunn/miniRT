@@ -15,11 +15,10 @@
 
 #include "sphere.h"
 
-typedef	struct	s_intersection
-{
-	int			is_exist;
-	t_sphere	*closest_sphere;
-	float		closest_t;
-}				t_intersection;
+typedef struct s_intersection {
+  int is_exist;
+  t_sphere *closest_sphere;
+  float closest_t;
+} t_intersection;
 
 #	endif

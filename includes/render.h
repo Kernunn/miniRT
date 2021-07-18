@@ -16,6 +16,6 @@
 #include "scene.h"
 #include "vector.h"
 
-t_vec3f	*render(t_scene *scene);
+t_vec3f *render(t_scene *scene);
 
 #	endif

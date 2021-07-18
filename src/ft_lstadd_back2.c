@@ -12,20 +12,16 @@
 
 #include "scene.h"
 
-void	ft_lstadd_back2(t_objects_lst **lst, t_objects_lst *new)
-{
-	t_objects_lst *begin;
+void ft_lstadd_back2(t_objects_lst **lst, t_objects_lst *new) {
+  t_objects_lst *begin;
 
-	if (lst)
-	{
-		begin = *lst;
-		if (begin)
-		{
-			while (begin->next)
-				begin = begin->next;
-			begin->next = new;
-		}
-		else
-			*lst = new;
-	}
+  if (lst) {
+	begin = *lst;
+	if (begin) {
+	  while (begin->next)
+		begin = begin->next;
+	  begin->next = new;
+	} else
+	  *lst = new;
+  }
 }

@@ -13,17 +13,16 @@
 #include "plane.h"
 #include "linear_algebra.h"
 
-float	intersect_ray_plane(t_vec3f origin, t_vec3f direction, t_plane *plane)
-{
-	float	denom;
-	float	b;
-	float	a;
-	float	dist;
+float intersect_ray_plane(t_vec3f origin, t_vec3f direction, t_plane *plane) {
+  float denom;
+  float b;
+  float a;
+  float dist;
 
-	dist = 0;
-	denom = -dot(plane->normal, plane->center);
-	a = dot(origin, plane->normal) + denom;
-	b = dot(direction, plane->normal);
-	dist = -(a / b);
-	return (dist);
+  dist = 0;
+  denom = -dot(plane->normal, plane->center);
+  a = dot(origin, plane->normal) + denom;
+  b = dot(direction, plane->normal);
+  dist = -(a / b);
+  return (dist);
 }

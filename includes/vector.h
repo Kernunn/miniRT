@@ -13,11 +13,10 @@
 #	ifndef VECTOR_H
 #	define VECTOR_H
 
-typedef struct	s_vec3f
-{
-	float x;
-	float y;
-	float z;
-}				t_vec3f;
+typedef struct s_vec3f {
+  float x;
+  float y;
+  float z;
+} t_vec3f;
 
 #	endif

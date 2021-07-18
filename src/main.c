@@ -19,22 +19,18 @@
 #include <unistd.h>
 #include "display.h"
 
-int	main(int argc, char *argv[])
-{
-	t_scene *scene;
+int main(int argc, char *argv[]) {
+  t_scene *scene;
 
-	if (argc < 2)
-	{
-		write(1, "Error\nMissing argument\n", 24);
-		return (1);
-	}
-	scene = parser_scene(check_file(read_file(argv[1])));
-	if (argc > 2 && !ft_strncmp(argv[2], "--save", 7))
-	{
-		save(scene);
-		del_scene(scene);
-	}
-	else
-		display_on_screen(scene);
-	return (0);
+  if (argc < 2) {
+	write(1, "Error\nMissing argument\n", 24);
+	return (1);
+  }
+  scene = parser_scene(check_file(read_file(argv[1])));
+  if (argc > 2 && !ft_strncmp(argv[2], "--save", 7)) {
+	save(scene);
+	del_scene(scene);
+  } else
+	display_on_screen(scene);
+  return (0);
 }

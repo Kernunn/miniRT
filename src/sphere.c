@@ -14,26 +14,25 @@
 #include <math.h>
 #include <linear_algebra.h>
 
-float	intersect_ray_sphere(t_vec3f origin, t_vec3f direction,
-		t_sphere *sphere)
-{
-	float	dist;
-	t_vec3f	l;
-	float	tca;
-	float	d2;
-	float	thc;
+float intersect_ray_sphere(t_vec3f origin, t_vec3f direction,
+						   t_sphere *sphere) {
+  float dist;
+  t_vec3f l;
+  float tca;
+  float d2;
+  float thc;
 
-	l = subtract(sphere->center, origin);
-	tca = dot(l, direction);
-	d2 = dot(l, l) - tca * tca;
-	if (d2 > sphere->radius * sphere->radius)
-		return (0);
-	thc = sqrtf(sphere->radius * sphere->radius - d2);
-	dist = tca - thc;
-	d2 = tca + thc;
-	if (dist < 0)
-		dist = d2;
-	if (dist < 0)
-		return (0);
-	return (dist);
+  l = subtract(sphere->center, origin);
+  tca = dot(l, direction);
+  d2 = dot(l, l) - tca * tca;
+  if (d2 > sphere->radius * sphere->radius)
+	return (0);
+  thc = sqrtf(sphere->radius * sphere->radius - d2);
+  dist = tca - thc;
+  d2 = tca + thc;
+  if (dist < 0)
+	dist = d2;
+  if (dist < 0)
+	return (0);
+  return (dist);
 }
